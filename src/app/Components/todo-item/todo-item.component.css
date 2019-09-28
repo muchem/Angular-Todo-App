@@ -1,3 +1,6 @@
 .delete{
     float: right;
 }
+.is-complete{
+    text-decoration: line-through;
+}

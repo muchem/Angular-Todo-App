@@ -14,12 +14,12 @@ export class TodosComponent implements OnInit {
     this.todos = [
       {
         id:1,
-        title:'clean my room',
+        title:'Clean my room',
         completed:false
       },
       {
         id: 2,
-        title: 'take a shower',
+        title: 'Take a shower',
         completed: true
       },
       {
