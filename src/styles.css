@@ -1,2 +1,6 @@
 /* You can add global s
 tyles to this file, and also import other style files */
+*{
+    margin:0px;
+    font-family:sans-serif;
+}
