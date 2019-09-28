@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';//enables ngmodel
 import { AppComponent } from './app.component';
 import{ HttpClientModule } from '@angular/common/http';
-import { TodosComponent } from './todos/todos.component';
+import { TodosComponent } from './Components/todos/todos.component';
+import { TodoItemComponent } from './Components/todo-item/todo-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodosComponent
+    TodosComponent,
+    TodoItemComponent
   ],
   imports: [
     BrowserModule,
