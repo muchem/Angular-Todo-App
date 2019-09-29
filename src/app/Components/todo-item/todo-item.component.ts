@@ -1,6 +1,6 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { Todo } from '../../Models/Todo';
-
+import { TodosService } from '../../Services/todos.service';
 @Component({
   selector: 'app-todo-item',
   templateUrl: './todo-item.component.html',
@@ -19,6 +19,12 @@ export class TodoItemComponent implements OnInit {
       'is-complete':this.todo.completed 
     }
     return classess
+    }
+    onToggle(todo){
+      this.todo.completed = !this.todo.completed;
+    }
+    remove(todo){
+
     }
 
 }

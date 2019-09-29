@@ -1,7 +1,7 @@
 <div class = 'container'[ngClass]='setClasses()'>
 <h4>
-    <input type="checkbox" />
+    <input (change)='onToggle()'type="checkbox" />
     {{todo.title}}
-    <button class ='delete'>x</button>
+    <button (click) = 'remove()'class ='delete'>x</button>
 </h4>
 </div>
