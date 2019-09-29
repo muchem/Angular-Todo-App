@@ -8,9 +8,9 @@ import { Observable } from 'rxjs';
 })
 export class TodosService {
   _url:string = 'https://jsonplaceholder.typicode.com/todos';
-  limit: string = '?_limit=15';
+  limit= '?_limit=15';
   constructor(private http:HttpClient) { }
   getTodos():Observable<Todo[]>{
-    return  this.http.get<Todo[]>(`${this._url}${this.limit}`);
+    return this.http.get<Todo[]>(`${this._url}${this.limit}`);
   }
 }
